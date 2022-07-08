@@ -22,8 +22,7 @@
 <div class="container-fluid bg-dark text-white p-5">
   <br><br>
   <h1>Text copier</h1>
-  <input type="text" id="input" name="input" placeholder="Enter text here!">
-      
+  <input type="text" id="input" name="input" placeholder="Enter text here!"><br><br>
   <button type="button" class="btn btn-primary" onclick="try{navigator.clipboard.writeText(document.getElementById('input').value);alert('Copied sucessfully!')}catch(err){alert('Sorry, an error occurred.')}">Copy!</button>
 </form>
 </div>
