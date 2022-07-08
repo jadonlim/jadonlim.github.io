@@ -24,7 +24,7 @@
   <h1>Text copier</h1>
   <label for="input">Input text here:</label>
   <input type="text" id="input" name="input"><br>
-  <button class="btn btn-dark" onclick="try{navigator.clipboard.writeText(document.getElementById('input').value);alert('Copied sucessfully!')}catch(err){alert('Sorry, an error occurred.')}">Copy!</button>
+  <button type="button" class="btn btn-dark" onclick="try{navigator.clipboard.writeText(document.getElementById('input').value);alert('Copied sucessfully!')}catch(err){alert('Sorry, an error occurred.')}">Copy!</button>
 </form>
 </div>
 
