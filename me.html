@@ -25,7 +25,7 @@
 </div>
   
 <div class="container-fluid bg-dark text-white p-5">
-  <button onclick="localStorage.name=prompt('Enter the name you want to use on Me.')">Set/Change your name</a>
+  <button type="button" class="btn btn-link" onclick="localStorage.name=prompt('Enter the name you want to use on Me.')">Set/Change your name</button>
 </div>
   
 <div>
@@ -37,7 +37,7 @@
 <script>
   function name() {
     localStorage.name = prompt('Enter the name you want to use on Me.')
-    document.getElementById("greeting")="Hello, "+localStorage.name
+    document.getElementById("greeting").innerHTML="Hello, " + localStorage.name
   }
 </script>
   
