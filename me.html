@@ -20,21 +20,22 @@
 </nav>
 
 <div class="container-fluid text-white p-5" style="margin-top: 55px; background-color: #42bff5; text-align: center;">
-  <br><br><h1 id="greeting">Hello, anonymous</h1>
-  <p>This is your page. You can set this as your homepage.</p><br><br>
+  <br><br>
+  <h1 id="greeting">Hello, anonymous</h1>
+  <p>This is your page. You can set this as your homepage.</p>
+  <br><br>
 </div>
   
 <div class="container-fluid bg-dark text-white p-5">
   <button type="button" class="btn btn-link" onclick="localStorage.name=prompt('Enter the name you want to use on Me.')">Set/Change your name</button>
 </div>
   
-<div>
-  <br>
-  <pre>   More stuff coming soon.</pre>
+<div class="container-fluid bg-dark text-white p-5">
+  <pre>More stuff coming soon.</pre>
 </div>
-</body>
   
 <script>
+  document.getElementById("greeting").innerHTML="Hello, " + localStorage.name
   function name() {
     localStorage.name = prompt('Enter the name you want to use on Me.')
     document.getElementById("greeting").innerHTML="Hello, " + localStorage.name
