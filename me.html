@@ -7,7 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body onload="startTime()">
 
 <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #0095ff; color: #ffffff;">
   <div class="container-fluid">
@@ -28,7 +28,7 @@
   
 <div class="container-fluid bg-dark text-white p-5">
   <h1>Your stuff</h1>
-  <button type="button" class="btn btn-primary" onclick="name()">Set/Change your name</button>
+  <button type="button" class="btn btn-primary" onclick="getName()">Set/Change your name</button>
 </div>
   
 <div class="container-fluid bg-dark text-white p-5">
@@ -46,7 +46,7 @@
   
 <script>
   document.getElementById("greeting").innerHTML="Hello, " + localStorage.name
-  function name() {
+  function getName() {
     localStorage.name = prompt('Enter the name you want to use on Me.')
     alert("Done setting/changing your name! Reload your page to see your new name.")
   }
