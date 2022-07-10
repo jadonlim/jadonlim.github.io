@@ -27,7 +27,13 @@
 </div>
   
 <div class="container-fluid bg-dark text-white p-5">
-  <button type="button" class="btn btn-link" onclick="localStorage.name=prompt('Enter the name you want to use on Me.')">Set/Change your name</button>
+  <h1>Your stuff</h1>
+  <button type="button" class="btn btn-link" onclick="name()">Set/Change your name</button>
+</div>
+  
+<div class="container-fluid bg-dark text-white p-5">
+  <h1>Clock</h1>
+  <p id="time"></p>
 </div>
   
 <div class="container-fluid bg-dark text-white p-5">
@@ -43,6 +49,20 @@
   function name() {
     localStorage.name = prompt('Enter the name you want to use on Me.')
     alert("Done setting/changing your name! Reload your page to see your new name.")
+  }
+  function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+  }
+  function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
   }
 </script>
   
