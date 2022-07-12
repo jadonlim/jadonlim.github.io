@@ -29,7 +29,6 @@
   <br><br>
   <h1>Text copier</h1>
   <input type="text" id="input" class="form-control" name="input" placeholder="Enter text here!">
-  <br>
   <button type="button" class="btn btn-primary" onclick="try{navigator.clipboard.writeText(document.getElementById('input').value);alert('Copied sucessfully!')}catch(err){alert('Sorry, an error occurred.')}">Copy!</button>
 </div>
   
@@ -52,7 +51,7 @@ function startTime() {
   h = checkTime(h);
   m = checkTime(m);
   s = checkTime(s);
-  document.getElementById('time').innerHTML='The time is currently ' + h + ":" + m + ":" + s + '.';
+  document.getElementById('time').innerHTML= h + ":" + m + ":" + s;
   setTimeout(startTime, 1000);
 }
 
