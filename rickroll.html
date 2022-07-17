@@ -19,11 +19,11 @@
 </nav>
   <br><br><br>
   <pre id="text">    Click the button below!</pre>
-  <button type="button" onclick="video()" id="button" class="btn btn-primary">Get the money!</button>
+  <button type="button" onclick="video()" id="button" class="btn btn-primary p-5">Get the money!</button>
 </body>
 <script>
   function video() {
-    document.getElementById("text").innerHTML="    You have been rickrolled! Share this with your friends. <br>If you don't see any video or the video doesn't play automatically, that means: <ul><li>Your computer (or browser) is lagging.</li><li>Your browser (or computer) does not support it.</li>"
+    document.getElementById("text").innerHTML="    You have been rickrolled! Share this with your friends. <br>    If you don't see any video or the video doesn't play automatically, that means: <ul><li>Your computer (or browser) is lagging.</li><li>Your browser (or computer) does not support it.</li>"
     document.getElementById("title").innerHTML="You have been rickrolled! | Jadon Lim"
     document.getElementById("button").outerHTML='<iframe width="420" height="315" allow="autoplay; encrypted-media" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=0&disablekb=1"></iframe>'
   }
