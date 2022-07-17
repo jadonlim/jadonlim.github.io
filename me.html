@@ -46,9 +46,6 @@
 </div>
   
 <script>
-  if (localStorage.name == "undefined") {
-    localStorage.name = "anonymous"
-  }
   document.getElementById("greeting").innerHTML="Hello, " + localStorage.name
   function getName() {
     localStorage.name = prompt('Enter the name you want to use on Me.')
